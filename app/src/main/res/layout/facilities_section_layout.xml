@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/ac_mCard_view4"
+        style="@style/material_card_view"
+        android:layout_height="90dp"
+        app:cardElevation="2dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/light_shade_gray_color"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/constraint_layout">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_ac"
+                style="@style/food_section_heading_txt_view"
+                android:text="@string/ac"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <LinearLayout
+                style="@style/linear_layout"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_ac"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_low_cooling"
+                    style="@style/food_section_txt_view"
+                    android:text="@string/low_cooling"
+                    android:layout_marginStart="0dp"
+                    android:background="@drawable/shape"/>
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_cleaning"
+                    style="@style/food_section_txt_view"
+                    android:text="@string/cleaning"
+                    android:background="@drawable/shape"/>
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_sweeping"
+                    style="@style/food_section_txt_view"
+                    android:text="@string/sweeping"
+                    android:background="@drawable/shape"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

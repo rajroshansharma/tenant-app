@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".complaints_section.ComplaintsFragment">
+
+    <ImageView
+        android:id="@+id/im_food"
+        style="@style/image_view_food"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/im_food"
+        android:elevation="4dp"
+        android:contentDescription="@string/desc"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/food_mCard_view"
+        style="@style/material_card_view"
+        app:cardPreventCornerOverlap="false"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        android:outlineAmbientShadowColor="@color/light_green"
+        android:outlineSpotShadowColor="@color/light_green"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/constraint_layout">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_food"
+                style="@style/complaints_text_view_heading"
+                android:text="@string/food"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_food_section"
+                style="@style/complaints_normal_text_view"
+                android:text="@string/food_section"
+                app:layout_constraintStart_toStartOf="@+id/tv_food"
+                app:layout_constraintTop_toBottomOf="@+id/tv_food"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <ImageView
+        android:id="@+id/im_bedroom"
+        style="@style/image_view_bedroom"
+        android:elevation="8dp"
+        android:layout_height="142dp"
+        app:layout_constraintTop_toBottomOf="@+id/im_food"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/im_bedroom"
+        android:contentDescription="@string/desc"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/bed_mCard_view"
+        style="@style/material_card_view"
+        android:layout_marginTop="32dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        android:outlineAmbientShadowColor="@color/card_bedroom_color"
+        android:outlineSpotShadowColor="@color/card_bedroom_color"
+        app:cardBackgroundColor="@color/card_bedroom_color"
+        app:layout_constraintTop_toBottomOf="@+id/food_mCard_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/constraint_layout">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_bed"
+                style="@style/complaints_text_view_heading"
+                android:text="@string/bedroom"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_bed_section"
+                style="@style/complaints_normal_text_view"
+                android:text="@string/food_section"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/tv_bed"
+                app:layout_constraintTop_toBottomOf="@+id/tv_bed"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/fac_mCard_view"
+        style="@style/material_card_view"
+        android:layout_marginTop="32dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        android:outlineAmbientShadowColor="@color/bg_crd_facilities_color"
+        android:outlineSpotShadowColor="@color/bg_crd_facilities_color"
+        app:cardBackgroundColor="@color/bg_crd_facilities_color"
+        app:layout_constraintTop_toBottomOf="@+id/bed_mCard_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout_faclities"
+            style="@style/constraint_layout">
+            <ImageView
+                android:id="@+id/im_fac"
+                style="@style/image_view_bedroom"
+                android:layout_marginTop="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/im_facilities"
+                android:contentDescription="@string/desc"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_fac"
+                style="@style/complaints_text_view_heading"
+                android:text="@string/facilities"
+                android:textColor="@color/iris_blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_fac_section"
+                style="@style/complaints_normal_text_view"
+                android:text="@string/food_section"
+                android:textColor="@color/iris_blue"
+                app:layout_constraintStart_toStartOf="@+id/tv_fac"
+                app:layout_constraintTop_toBottomOf="@+id/tv_fac"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/camera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        style="@style/image_view_bedroom"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="32dp"
+        android:elevation="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/fac_mCard_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/im_camera"
+        android:contentDescription="@string/desc"/>
+
+
+    <ImageView
+        android:id="@+id/im_right_tick"
+        android:layout_width="80dp"
+        android:layout_height="200dp"
+        android:elevation="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="0dp"
+        style="@style/image_view_bedroom"
+        android:src="@drawable/im_right_tick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fac_mCard_view"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/security_mCard_view"
+        style="@style/material_card_view"
+        android:layout_marginTop="32dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        android:outlineAmbientShadowColor="@color/bg_card_security_color"
+        android:outlineSpotShadowColor="@color/bg_card_security_color"
+        app:cardBackgroundColor="@color/bg_card_security_color"
+        app:layout_constraintTop_toBottomOf="@+id/fac_mCard_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout"
+            style="@style/constraint_layout">
+
+
+            <ImageView
+                style="@style/image_view_bedroom"
+                android:layout_width="150dp"
+                android:elevation="2dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/im_secuirity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/constraint_layout" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_security"
+                style="@style/complaints_text_view_heading"
+                android:text="@string/security"
+                android:textColor="@color/red"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_security_section"
+                style="@style/complaints_normal_text_view"
+                android:text="@string/food_section"
+                android:textColor="@color/red"
+                app:layout_constraintStart_toStartOf="@+id/tv_security"
+                app:layout_constraintTop_toBottomOf="@+id/tv_security"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

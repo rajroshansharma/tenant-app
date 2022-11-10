@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.android.dev.tenatapp.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_complaintsFragment"
+            app:destination="@id/complaintsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/complaintsFragment"
+        android:name="com.android.dev.tenatapp.complaints_section.ComplaintsFragment"
+        android:label="fragment_complaints"
+        tools:layout="@layout/fragment_complaints" >
+
+
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            android:id="@+id/action_complaintsFragment_to_foodSectionFragment"
+            app:destination="@id/foodSectionFragment" />
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            android:id="@+id/action_complaintsFragment_to_securitySectionFragment"
+            app:destination="@id/securitySectionFragment" />
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            android:id="@+id/action_complaintsFragment_to_bedroomSectionFragment"
+            app:destination="@id/bedroomSectionFragment" />
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            android:id="@+id/action_complaintsFragment_to_facilitiesSectionFragment"
+            app:destination="@id/facilitiesSectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodSectionFragment"
+        android:name="com.android.dev.tenatapp.complaints_section.FoodSectionFragment"
+        android:label="fragment_food_section"
+        tools:layout="@layout/fragment_food_section" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/bedroomSectionFragment"
+        android:name="com.android.dev.tenatapp.complaints_section.BedroomSectionFragment"
+        android:label="fragment_bedroom_section"
+        tools:layout="@layout/fragment_bedroom_section" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/facilitiesSectionFragment"
+        android:name="com.android.dev.tenatapp.complaints_section.FacilitiesSectionFragment"
+        android:label="fragment_facilities_section"
+        tools:layout="@layout/fragment_facilities_section" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/securitySectionFragment"
+        android:name="com.android.dev.tenatapp.complaints_section.SecuritySectionFragment"
+        android:label="fragment_security_section"
+        tools:layout="@layout/fragment_security_section" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/hostFragment"
+        android:name="com.android.dev.tenatapp.HostFragment"
+        android:label="fragment_host"
+        tools:layout="@layout/fragment_host" />
+</navigation>

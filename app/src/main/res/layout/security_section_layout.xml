@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/security_mCard_view"
+        style="@style/material_card_view"
+        android:layout_height="90dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="@color/light_shade_gray_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/constraint_layout">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_security"
+                style="@style/food_section_heading_txt_view"
+                android:text="@string/security"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <LinearLayout
+                style="@style/linear_layout"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_security"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_pg_entry"
+                    style="@style/food_section_txt_view"
+                    android:text="@string/pg_entry"
+                    android:layout_marginStart="0dp"
+                    android:background="@drawable/shape"/>
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_cctv"
+                    style="@style/food_section_txt_view"
+                    android:layout_weight="2"
+                    android:text="@string/cctv"
+                    android:background="@drawable/shape"/>
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_fire_safety"
+                    style="@style/food_section_txt_view"
+                    android:text="@string/fire_safety"
+                    android:background="@drawable/shape"/>
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_theft"
+                    style="@style/food_section_txt_view"
+                    android:text="@string/theft"
+                    android:background="@drawable/shape"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="txt" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="AllEditText" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="background">@drawable/bg_edit_text</item>
+    </style>
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorSwitchThumbNormal">#f1f1f1</item>
+        <item name="colorControlActivated">@color/black</item>
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+
+
+    // this is used for complaints screen
+    <style name="constraint_layout" parent="Widget.AppCompat.Light.ActionMode.Inverse">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
+    <style name="material_card_view" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">130dp</item>
+        <item name="cardBackgroundColor">@color/light_green</item>
+        <item name="android:animateLayoutChanges">true</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="complaints_text_view_heading" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="complaints_normal_text_view" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_marginStart">1.8dp</item>
+    </style>
+
+    <style name="image_view_food" parent="Widget.AppCompat.Light.ActionMode.Inverse">
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">160dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+    </style>
+
+    <style name="image_view_bedroom" parent="Widget.AppCompat.Light.ActionMode.Inverse">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">160dp</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+    </style>
+
+    <style name="linear_layout"  parent="TextAppearance.AppCompat.Small.Inverse">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:weightSum">8</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="food_section_heading_txt_view"  parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="food_section_txt_view"  parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">2pt</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="background">@drawable/shape</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginStart">6dp</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="complaints_first_seccound_txt_view" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="action_tabs_card" parent="Widget.MaterialComponents.CardView">
+    <item name="android:layout_width">180dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="cardBackgroundColor">@color/white</item>
+    <item name="cardCornerRadius">8dp</item>
+    <item name="cardUseCompatPadding">true</item>
+
+    <item name="elevation">16sp</item>
+        <item name="strokeColor">@color/black</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="acticon_tabs_txt_heading" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="action_normal_txt_view" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="action_tabs_image" parent="TextAppearance.AppCompat.Small.Inverse">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+
+    </style>
+
+</resources>

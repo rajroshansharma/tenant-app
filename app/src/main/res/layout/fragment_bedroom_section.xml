@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".complaints_section.BedroomSectionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/bedroom_card_view"
+            style="@style/material_card_view"
+            android:layout_height="90dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="false"
+            app:cardBackgroundColor="@color/light_shade_gray_color">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/constraint_layout">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_quality"
+                    style="@style/food_section_heading_txt_view"
+                    android:text="@string/furniture"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <LinearLayout
+                    style="@style/linear_layout"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_quality"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_bed"
+                        style="@style/food_section_txt_view"
+                        android:text="@string/bed"
+                        android:layout_marginStart="0dp"
+                        android:background="@drawable/shape"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_chair"
+                        style="@style/food_section_txt_view"
+                        android:layout_weight="2"
+                        android:text="@string/chair"
+                        android:background="@drawable/shape"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_table"
+                        style="@style/food_section_txt_view"
+                        android:text="@string/table"
+                        android:background="@drawable/shape"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_door"
+                        style="@style/food_section_txt_view"
+                        android:text="@string/door"
+                        android:background="@drawable/shape"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_sheet"
+                        style="@style/food_section_txt_view"
+                        android:text="@string/sheet"
+                        android:background="@drawable/shape"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/bedroom_mCard_view"
+            style="@style/material_card_view"
+            android:layout_height="90dp"
+            app:cardElevation="2dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/light_shade_gray_color">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/constraint_layout">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_washroom"
+                    style="@style/food_section_heading_txt_view"
+                    android:text="@string/washroom"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <LinearLayout
+                    style="@style/linear_layout"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_washroom"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_shower"
+                        style="@style/food_section_txt_view"
+                        android:text="@string/shower"
+                        android:layout_marginStart="0dp"
+                        android:background="@drawable/shape"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_tap"
+                        style="@style/food_section_txt_view"
+                        android:layout_weight="2"
+                        android:text="@string/tap"
+                        android:background="@drawable/shape"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_flush"
+                        style="@style/food_section_txt_view"
+                        android:text="@string/flush"
+                        android:background="@drawable/shape"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_light"
+                        style="@style/food_section_txt_view"
+                        android:text="@string/light"
+                        android:background="@drawable/shape"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/bedroom_mCard_view4"
+            style="@style/material_card_view"
+            android:layout_height="90dp"
+            app:cardElevation="2dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/light_shade_gray_color">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/constraint_layout">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_comfort"
+                    style="@style/food_section_heading_txt_view"
+                    android:text="@string/comfort"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <LinearLayout
+                    style="@style/linear_layout"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_comfort"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_ac"
+                        style="@style/food_section_txt_view"
+                        android:text="@string/ac"
+                        android:layout_marginStart="0dp"
+                        android:background="@drawable/shape"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_fan"
+                        style="@style/food_section_txt_view"
+                        android:layout_weight="2"
+                        android:text="@string/fan"
+                        android:background="@drawable/shape"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_tv"
+                        style="@style/food_section_txt_view"
+                        android:text="@string/tv"
+                        android:background="@drawable/shape"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_dinning"
+                        style="@style/food_section_txt_view"
+                        android:text="@string/exhaust"
+                        android:background="@drawable/shape"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/bedroom_mCard_view2"
+            style="@style/material_card_view"
+            android:layout_height="90dp"
+            app:cardElevation="2dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/light_shade_gray_color">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/constraint_layout">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_cleanliness"
+                    style="@style/food_section_heading_txt_view"
+                    android:text="@string/cleanliness"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <LinearLayout
+                    style="@style/linear_layout"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_cleanliness"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_pest"
+                        style="@style/food_section_txt_view"
+                        android:text="@string/pest"
+                        android:layout_marginStart="0dp"
+                        android:background="@drawable/shape"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_cleaning"
+                        style="@style/food_section_txt_view"
+                        android:layout_weight="2"
+                        android:text="@string/cleaning"
+                        android:background="@drawable/shape"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_sweeping"
+                        style="@style/food_section_txt_view"
+                        android:text="@string/sweeping"
+                        android:background="@drawable/shape"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/food_mCard_view5"
+            style="@style/material_card_view"
+            android:layout_height="90dp"
+            app:cardElevation="2dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/light_shade_gray_color">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/constraint_layout">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_roommate"
+                    style="@style/food_section_heading_txt_view"
+                    android:text="@string/roommate"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <LinearLayout
+                    style="@style/linear_layout"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_roommate"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_social_behaviour"
+                        style="@style/food_section_txt_view"
+                        android:text="@string/social_behaviour"
+                        android:layout_marginStart="0dp"
+                        android:background="@drawable/shape"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_academic"
+                        style="@style/food_section_txt_view"
+                        android:layout_weight="2"
+                        android:text="@string/academic"
+                        android:background="@drawable/shape"/>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_missing"
+                        style="@style/food_section_txt_view"
+                        android:layout_weight="2"
+                        android:text="@string/missing"
+                        android:background="@drawable/shape"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
